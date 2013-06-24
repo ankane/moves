@@ -4,7 +4,7 @@ Ruby client for [Moves](https://dev.moves-app.com/docs/overview)
 
 ## Usage
 
-Create a client.  To obtain an access token, we recommmend the [omniauth-moves](https://github.com/nickelser/omniauth-moves) gem.
+Create a client.  To obtain an access token, we recommend the [omniauth-moves](https://github.com/nickelser/omniauth-moves) gem.
 
 ```ruby
 client = Moves::Client.new(access_token)
