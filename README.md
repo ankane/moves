@@ -1,6 +1,6 @@
 # Moves
 
-Ruby client for [Moves](http://www.moves-app.com/)
+Ruby client for [Moves](https://dev.moves-app.com/docs/overview)
 
 ## Usage
 
@@ -19,29 +19,45 @@ client.profile
 Get daily summary
 
 ```ruby
-client.daily_summary # default to current day
+client.daily_summary                  # current day
+client.daily_summary("2013-06-20")    # any day
+client.daily_summary("2013-W25")      # week
+client.daily_summary("2013-06")       # month
 client.daily_summary(:from => "2013-06-20", :to => "2013-06-23") # max 31 days
 ```
 
 Get daily activities
 
 ```ruby
-client.daily_activities # default to current day
+client.daily_activities               # current day
+client.daily_activities("2013-06-20") # any day
+client.daily_activities("2013-W25")   # week
 client.daily_activities(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
 ```
 
 Get daily places
 
 ```ruby
-client.daily_places # default to current day
+client.daily_places                   # current day
+client.daily_places("2013-06-20")     # any day
+client.daily_places("2013-W25")       # week
 client.daily_places(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
 ```
 
 Get daily storyline
 
 ```ruby
-client.daily_storyline # default to current day
+client.daily_storyline                # current day
+client.daily_storyline("2013-06-20")  # any day
+client.daily_storyline("2013-W25")    # week
 client.daily_storyline(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+```
+
+Get daily storyline with track points
+
+```ruby
+client.daily_storyline(:trackPoints => true)               # current day
+client.daily_storyline("2013-06-20", :trackPoints => true) # any day
 ```
 
 ## Installation
