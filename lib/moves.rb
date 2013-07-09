@@ -40,17 +40,31 @@ module Moves
     end
 
     def get_range(path, *args)
+      format = "%Y-%m-%d"
+
       extra_path, params =
-        if args[0].is_a?(String)
-          ["/#{args[0]}", args[1]]
-        else
+        if args[0].is_a?(Hash)
           ["", args[0]]
+        elsif args[0].respond_to?(:strftime)
+          ["/#{args[0].strftime(format)}", args[1]]
+        elsif args[0].is_a?(Range)
+          ["", {:from => args[0].first, to: args[0].last}]
+        else
+          ["/#{args[0]}", args[1]]
         end
       params ||= {}
 
       # default to current day
       if extra_path.empty? and !(params[:to] or params[:from])
-        extra_path = "/#{Time.now.strftime("%Y%m%d")}"
+        extra_path = "/#{Time.now.strftime(format)}"
+      end
+
+      if params[:to].respond_to?(:strftime)
+        params[:to] = params[:to].strftime(format)
+      end
+
+      if params[:from].respond_to?(:strftime)
+        params[:from] = params[:from].strftime(format)
       end
 
       get "#{path}#{extra_path}", params

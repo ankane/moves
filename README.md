@@ -24,6 +24,12 @@ client.daily_summary("2013-06-20")    # any day
 client.daily_summary("2013-W25")      # week
 client.daily_summary("2013-06")       # month
 client.daily_summary(:from => "2013-06-20", :to => "2013-06-23") # max 31 days
+
+# also supports Time, Date, and DateTime objects
+client.daily_summary(Time.now)
+client.daily_summary(Date.today)
+client.daily_summary(DateTime.now)
+client.daily_summary((Date.today - 1)..Date.today)
 ```
 
 Get daily activities

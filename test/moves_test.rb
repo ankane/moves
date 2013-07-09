@@ -1,4 +1,5 @@
 require "test_helper"
+require "date"
 
 class TestMoves < Minitest::Test
 
@@ -9,6 +10,11 @@ class TestMoves < Minitest::Test
     @week = "2013-W25"
     @month = "2013-06"
     @from_to = {:from => "2013-06-20", :to => "2013-06-23"}
+    @time = Time.now
+    @date_time = DateTime.now
+    @date = Date.today
+    @from_to_time = {:from => @time - 86400, :to => @time}
+    @time_range = (@time - 86400)..@time
   end
 
   def test_profile
@@ -24,6 +30,18 @@ class TestMoves < Minitest::Test
     assert_works @client.daily_summary(@day)
   end
 
+  def test_daily_summary_time
+    assert_works @client.daily_summary(@time)
+  end
+
+  def test_daily_summary_date_time
+    assert_works @client.daily_summary(@date_time)
+  end
+
+  def test_daily_summary_date
+    assert_works @client.daily_summary(@date)
+  end
+
   def test_daily_summary_week
     assert_works @client.daily_summary(@week)
   end
@@ -34,6 +52,14 @@ class TestMoves < Minitest::Test
 
   def test_daily_summary_from_to
     assert_works @client.daily_summary(@from_to)
+  end
+
+  def test_daily_summary_from_to_time
+    assert_works @client.daily_summary(@from_to_time)
+  end
+
+  def test_daily_summary_time_range
+    assert_works @client.daily_summary(@time_range)
   end
 
   def test_daily_activites
