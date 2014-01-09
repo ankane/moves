@@ -35,7 +35,9 @@ module Moves
     protected
 
     def get(path, params = {})
-      response = RestClient.get "#{ENDPOINT}#{path}", :params => {:access_token => @access_token}.merge(params)
+      response = RestClient.get("#{ENDPOINT}#{path}",
+                                :authorization => "Bearer #{@access_token}",
+                                :params => params)
       JSON.parse(response.body)
     end
 

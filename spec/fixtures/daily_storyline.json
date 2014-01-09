@@ -1,0 +1,318 @@
+[
+    {
+        "date": "20121212",
+        "segments": [
+            {
+                "type": "place",
+                "startTime": "20121212T000000Z",
+                "endTime": "20121212T071430Z",
+                "place": {
+                    "id": 1,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            },
+            {
+                "type": "move",
+                "startTime": "20121212T071430Z",
+                "endTime": "20121212T074617Z",
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T071430Z",
+                        "endTime": "20121212T072732Z",
+                        "duration": 782,
+                        "distance": 1251,
+                        "steps": 1353,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T071430Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T072732Z"
+                            }
+                        ]
+                    },
+                    {
+                        "activity": "trp",
+                        "startTime": "20121212T072732Z",
+                        "endTime": "20121212T074616Z",
+                        "duration": 1124,
+                        "distance": 8443,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T072732Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T074208Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T074617Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T074617Z",
+                "endTime": "20121212T100051Z",
+                "place": {
+                    "id": 2,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                },
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T074804Z",
+                        "endTime": "20121212T075234Z",
+                        "duration": 270,
+                        "distance": 227,
+                        "steps": 303,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T074804Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T075234Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "move",
+                "startTime": "20121212T100051Z",
+                "endTime": "20121212T100715Z",
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T100051Z",
+                        "endTime": "20121212T100715Z",
+                        "duration": 384,
+                        "distance": 421,
+                        "steps": 488,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T100051Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T100715Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T100715Z",
+                "endTime": "20121212T110530Z",
+                "place": {
+                    "id": 4,
+                    "name": "test",
+                    "type": "foursquare",
+                    "foursquareId": "4df0fdb17d8ba370a011d24c",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                },
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T101215Z",
+                        "endTime": "20121212T101255Z",
+                        "duration": 40,
+                        "distance": 18,
+                        "steps": 37,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T101215Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T101255Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "move",
+                "startTime": "20121212T110530Z",
+                "endTime": "20121212T111129Z",
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T110530Z",
+                        "endTime": "20121212T111128Z",
+                        "duration": 358,
+                        "distance": 493,
+                        "steps": 441,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T110531Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T110536Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T110947Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T111017Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T111129Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T111129Z",
+                "endTime": "20121212T153638Z",
+                "place": {
+                    "id": 2,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                },
+                "activities": [
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T111233Z",
+                        "endTime": "20121212T112203Z",
+                        "duration": 570,
+                        "distance": 565,
+                        "steps": 809,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T111233Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T112203Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "move",
+                "startTime": "20121212T153638Z",
+                "endTime": "20121212T160744Z",
+                "activities": [
+                    {
+                        "activity": "trp",
+                        "startTime": "20121212T153638Z",
+                        "endTime": "20121212T155321Z",
+                        "duration": 1003,
+                        "distance": 8058,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T153638Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T155322Z"
+                            }
+                        ]
+                    },
+                    {
+                        "activity": "wlk",
+                        "startTime": "20121212T155322Z",
+                        "endTime": "20121212T160744Z",
+                        "duration": 862,
+                        "distance": 1086,
+                        "steps": 1257,
+                        "calories": 99,
+                        "trackPoints": [
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T155322Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T155402Z"
+                            },
+                            {
+                                "lat": 55.55555,
+                                "lon": 33.33333,
+                                "time": "20121212T160744Z"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T160744Z",
+                "endTime": "20121212T232730Z",
+                "place": {
+                    "id": 1,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            }
+        ],
+        "caloriesIdle": 1785
+    }
+]

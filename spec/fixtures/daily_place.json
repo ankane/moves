@@ -1,0 +1,78 @@
+[
+    {
+        "date": "20121212",
+        "segments": [
+            {
+                "type": "place",
+                "startTime": "20121212T000000Z",
+                "endTime": "20121212T071430Z",
+                "place": {
+                    "id": 1,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T074617Z",
+                "endTime": "20121212T100051Z",
+                "place": {
+                    "id": 2,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T100715Z",
+                "endTime": "20121212T110530Z",
+                "place": {
+                    "id": 4,
+                    "name": "test",
+                    "type": "foursquare",
+                    "foursquareId": "4df0fdb17d8ba370a011d24c",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T111129Z",
+                "endTime": "20121212T153638Z",
+                "place": {
+                    "id": 2,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            },
+            {
+                "type": "place",
+                "startTime": "20121212T160744Z",
+                "endTime": "20121212T232730Z",
+                "place": {
+                    "id": 1,
+                    "type": "unknown",
+                    "location": {
+                        "lat": 55.55555,
+                        "lon": 33.33333
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "date": "20121213",
+        "segments": null
+    }
+]
