@@ -1,3 +1,5 @@
+[![Build Status](https://next.travis-ci.org/ankane/moves.png?branch=master)](https://next.travis-ci.org/ankane/moves)
+
 # Moves
 
 Ruby client for [Moves](https://dev.moves-app.com/docs/overview)
