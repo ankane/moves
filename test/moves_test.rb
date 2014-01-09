@@ -1,4 +1,4 @@
-require "test_helper"
+require_relative "test_helper"
 require "date"
 
 class TestMoves < Minitest::Test
@@ -6,10 +6,10 @@ class TestMoves < Minitest::Test
   def setup
     @client = Moves::Client.new(ENV["ACCESS_TOKEN"])
     @today = Time.now.strftime("%Y-%m-%d")
-    @day = "2013-06-20"
-    @week = "2013-W25"
-    @month = "2013-06"
-    @from_to = {:from => "2013-06-20", :to => "2013-06-23"}
+    @day = "2014-01-01"
+    @week = "2014-W1"
+    @month = "2014-01"
+    @from_to = {:from => "2014-01-01", :to => "2014-01-07"}
     @time = Time.now
     @date_time = DateTime.now
     @date = Date.today
