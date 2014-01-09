@@ -49,6 +49,8 @@ module Moves
           ["/#{args[0].strftime(format)}", args[1]]
         elsif args[0].is_a?(Range)
           ["", {:from => args[0].first, to: args[0].last}]
+        elsif args.compact.empty?
+          ["", nil]
         else
           ["/#{args[0]}", args[1]]
         end
