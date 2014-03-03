@@ -126,6 +126,10 @@ class TestMoves < Minitest::Test
     assert_works @client.daily_storyline(@day, :trackPoints => true)
   end
 
+  def test_activity_list
+    assert_works @client.activity_list
+  end
+
   protected
 
   # TODO better tests

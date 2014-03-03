@@ -66,6 +66,13 @@ Get daily storyline with track points
 moves.daily_storyline(:trackPoints => true)
 ```
 
+Get activity list
+
+```ruby
+moves.activity_list
+```
+
+
 ## Contributing
 
 Everyone is encouraged to help improve this project. Here are a few ways you can help:

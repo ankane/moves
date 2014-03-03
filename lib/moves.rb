@@ -32,6 +32,10 @@ module Moves
       get_range "user/storyline/daily", *args
     end
 
+    def activity_list
+      get "activities"
+    end
+
     protected
 
     def get(path, params = {})
