@@ -2,7 +2,13 @@
 
 Ruby client for [Moves](https://dev.moves-app.com/docs/overview)
 
-## Usage
+## Get Started
+
+Add this line to your application’s Gemfile:
+
+```ruby
+gem "moves"
+```
 
 Create a client.  To obtain an access token, we recommend the [omniauth-moves](https://github.com/nickelser/omniauth-moves) gem.
 
@@ -66,24 +72,11 @@ moves.daily_storyline(:trackPoints => true)               # current day
 moves.daily_storyline("2013-06-20", :trackPoints => true) # any day
 ```
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-```ruby
-gem "moves"
-```
-
-And then execute:
-
-```sh
-bundle
-```
-
 ## Contributing
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+Everyone is encouraged to help improve this project. Here are a few ways you can help:
+
+- [Report bugs](https://github.com/ankane/moves/issues)
+- Fix bugs and [submit pull requests](https://github.com/ankane/moves/pulls)
+- Write, clarify, or fix documentation
+- Suggest or add new features
