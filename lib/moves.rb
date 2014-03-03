@@ -6,7 +6,7 @@ module Moves
   class Client
     attr_reader :access_token
 
-    ENDPOINT = "https://api.moves-app.com/api/v1/"
+    ENDPOINT = "https://api.moves-app.com/api/1.1/"
 
     def initialize(access_token)
       @access_token = access_token
