@@ -16,13 +16,13 @@ Create a client.  To obtain an access token, we recommend the [omniauth-moves](h
 moves = Moves::Client.new(access_token)
 ```
 
-Get [profile](https://dev.moves-app.com/docs/api_profile)
+Get profile
 
 ```ruby
 moves.profile
 ```
 
-Get [daily summary](https://dev.moves-app.com/docs/api_summaries)
+Get daily summary
 
 ```ruby
 moves.daily_summary                  # current day
@@ -42,19 +42,19 @@ moves.daily_summary((Date.today - 1)..Date.today)
 
 **Note:** Methods below support the same parameters as above
 
-Get [daily activities](https://dev.moves-app.com/docs/api_activities)
+Get daily activities
 
 ```ruby
 moves.daily_activities
 ```
 
-Get [daily places](https://dev.moves-app.com/docs/api_places)
+Get daily places
 
 ```ruby
 moves.daily_places
 ```
 
-Get [daily storyline](https://dev.moves-app.com/docs/api_storyline)
+Get daily storyline
 
 ```ruby
 moves.daily_storyline
@@ -66,7 +66,7 @@ Get daily storyline with track points
 moves.daily_storyline(:trackPoints => true)
 ```
 
-Get [activity list](https://dev.moves-app.com/docs/api_activity_list)
+Get activity list
 
 ```ruby
 moves.activity_list
