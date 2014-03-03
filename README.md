@@ -40,7 +40,7 @@ moves.daily_summary(DateTime.now)
 moves.daily_summary((Date.today - 1)..Date.today)
 ```
 
-**Note:** Methods below support the same parameters as above
+**Fun fact:** Methods below support the same parameters as above
 
 Get daily activities
 
