@@ -72,6 +72,9 @@ Get activity list
 moves.activity_list
 ```
 
+## History
+
+View the [changelog](https://github.com/ankane/moves/blob/master/CHANGELOG.md)
 
 ## Contributing
 
