@@ -7,63 +7,63 @@ Ruby client for [Moves](https://dev.moves-app.com/docs/overview)
 Create a client.  To obtain an access token, we recommend the [omniauth-moves](https://github.com/nickelser/omniauth-moves) gem.
 
 ```ruby
-client = Moves::Client.new(access_token)
+moves = Moves::Client.new(access_token)
 ```
 
 Get profile
 
 ```ruby
-client.profile
+moves.profile
 ```
 
 Get daily summary
 
 ```ruby
-client.daily_summary                  # current day
-client.daily_summary("2013-06-20")    # any day
-client.daily_summary("2013-W25")      # week
-client.daily_summary("2013-06")       # month
-client.daily_summary(:from => "2013-06-20", :to => "2013-06-23") # max 31 days
+moves.daily_summary                  # current day
+moves.daily_summary("2013-06-20")    # any day
+moves.daily_summary("2013-W25")      # week
+moves.daily_summary("2013-06")       # month
+moves.daily_summary(:from => "2013-06-20", :to => "2013-06-23") # max 31 days
 
 # also supports Time, Date, and DateTime objects
-client.daily_summary(Time.now)
-client.daily_summary(Date.today)
-client.daily_summary(DateTime.now)
-client.daily_summary((Date.today - 1)..Date.today)
+moves.daily_summary(Time.now)
+moves.daily_summary(Date.today)
+moves.daily_summary(DateTime.now)
+moves.daily_summary((Date.today - 1)..Date.today)
 ```
 
 Get daily activities
 
 ```ruby
-client.daily_activities               # current day
-client.daily_activities("2013-06-20") # any day
-client.daily_activities("2013-W25")   # week
-client.daily_activities(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_activities               # current day
+moves.daily_activities("2013-06-20") # any day
+moves.daily_activities("2013-W25")   # week
+moves.daily_activities(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
 ```
 
 Get daily places
 
 ```ruby
-client.daily_places                   # current day
-client.daily_places("2013-06-20")     # any day
-client.daily_places("2013-W25")       # week
-client.daily_places(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_places                   # current day
+moves.daily_places("2013-06-20")     # any day
+moves.daily_places("2013-W25")       # week
+moves.daily_places(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
 ```
 
 Get daily storyline
 
 ```ruby
-client.daily_storyline                # current day
-client.daily_storyline("2013-06-20")  # any day
-client.daily_storyline("2013-W25")    # week
-client.daily_storyline(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_storyline                # current day
+moves.daily_storyline("2013-06-20")  # any day
+moves.daily_storyline("2013-W25")    # week
+moves.daily_storyline(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
 ```
 
 Get daily storyline with track points
 
 ```ruby
-client.daily_storyline(:trackPoints => true)               # current day
-client.daily_storyline("2013-06-20", :trackPoints => true) # any day
+moves.daily_storyline(:trackPoints => true)               # current day
+moves.daily_storyline("2013-06-20", :trackPoints => true) # any day
 ```
 
 ## Installation
