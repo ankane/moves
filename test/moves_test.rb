@@ -62,6 +62,14 @@ class TestMoves < Minitest::Test
     assert_works @client.daily_summary(@time_range)
   end
 
+  def test_daily_summary_past_days
+    assert_works @client.daily_summary(:pastDays => 31)
+  end
+
+  def test_daily_summary_updated_since
+    assert @client.daily_summary(:updatedSince => Time.now - 86400)
+  end
+
   def test_daily_activites
     assert_works @client.daily_activities
   end

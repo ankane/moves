@@ -69,6 +69,10 @@ module Moves
         params[:from] = params[:from].strftime(format)
       end
 
+      if params[:updatedSince].respond_to?(:utc)
+        params[:updatedSince] = params[:updatedSince].utc.strftime("%Y%m%dT%H%M%SZ")
+      end
+
       get "#{path}#{extra_path}", params
     end
   end

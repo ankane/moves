@@ -30,6 +30,8 @@ moves.daily_summary("2013-06-20")    # any day
 moves.daily_summary("2013-W25")      # week
 moves.daily_summary("2013-06")       # month
 moves.daily_summary(:from => "2013-06-20", :to => "2013-06-23") # max 31 days
+moves.daily_summary(:pastDays => 31) # max 31 days
+moves.daily_summary(:updatedSince => 3.days.ago)
 
 # also supports Time, Date, and DateTime objects
 moves.daily_summary(Time.now)
@@ -38,38 +40,30 @@ moves.daily_summary(DateTime.now)
 moves.daily_summary((Date.today - 1)..Date.today)
 ```
 
+**Note:** Methods below support the same parameters as above
+
 Get daily activities
 
 ```ruby
-moves.daily_activities               # current day
-moves.daily_activities("2013-06-20") # any day
-moves.daily_activities("2013-W25")   # week
-moves.daily_activities(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_activities
 ```
 
 Get daily places
 
 ```ruby
-moves.daily_places                   # current day
-moves.daily_places("2013-06-20")     # any day
-moves.daily_places("2013-W25")       # week
-moves.daily_places(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_places
 ```
 
 Get daily storyline
 
 ```ruby
-moves.daily_storyline                # current day
-moves.daily_storyline("2013-06-20")  # any day
-moves.daily_storyline("2013-W25")    # week
-moves.daily_storyline(:from => "2013-06-20", :to => "2013-06-23") # max 7 days
+moves.daily_storyline
 ```
 
 Get daily storyline with track points
 
 ```ruby
-moves.daily_storyline(:trackPoints => true)               # current day
-moves.daily_storyline("2013-06-20", :trackPoints => true) # any day
+moves.daily_storyline(:trackPoints => true)
 ```
 
 ## Contributing
