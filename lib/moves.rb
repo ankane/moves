@@ -61,7 +61,7 @@ module Moves
       params ||= {}
 
       # default to current day
-      if extra_path.empty? and !(params[:to] or params[:from])
+      if extra_path.empty? and !(params[:to] or params[:from] or params[:pastDays])
         extra_path = "/#{Time.now.strftime(format)}"
       end
 
