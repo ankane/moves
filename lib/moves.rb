@@ -52,7 +52,7 @@ module Moves
         elsif args[0].respond_to?(:strftime)
           ["/#{args[0].strftime(format)}", args[1]]
         elsif args[0].is_a?(Range)
-          ["", {:from => args[0].first, to: args[0].last}]
+          ["", {:from => args[0].first, :to => args[0].last}]
         elsif args.compact.empty?
           ["", nil]
         else
@@ -61,7 +61,7 @@ module Moves
       params ||= {}
 
       # default to current day
-      if extra_path.empty? and !(params[:to] or params[:from] or params[:pastDays])
+      if extra_path.empty? && !(params[:to] || params[:from] || params[:pastDays])
         extra_path = "/#{Time.now.strftime(format)}"
       end
 

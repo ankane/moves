@@ -2,7 +2,6 @@ require_relative "test_helper"
 require "date"
 
 class TestMoves < Minitest::Test
-
   def setup
     @client = Moves::Client.new(ENV["ACCESS_TOKEN"])
     @today = Time.now.strftime("%Y-%m-%d")
@@ -137,5 +136,4 @@ class TestMoves < Minitest::Test
   def assert_works(actual)
     assert_operator actual.size, :>=, 1
   end
-
 end
